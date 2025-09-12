@@ -133,6 +133,8 @@ header nav a:hover {
   border-radius: var(--border-radius);
   padding: 1rem;
   background-color: var(--bg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .box-project img {
   max-width: 100%;
@@ -140,10 +142,43 @@ header nav a:hover {
   border-radius: var(--border-radius);
   margin-top: 0.5rem;
 }
+.box-project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+.box-project a:hover {
+  text-decoration: underline;
+}
 main {
   width: 90%;
   margin: 0 5%;
   padding: 1rem 0;
+}
+
+main #about {
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--bg);
+}
+#contact {
+  background-color: #828282;
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+}
+#contact a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+#contact a:hover {
+  text-decoration: underline;
 }
 form {
   padding: 1rem;
@@ -157,6 +192,13 @@ form {
 form label {
   margin-bottom: 0.5rem;
   font-weight: bold;
+}
+
+form textarea {
+  resize: vertical;
+  width: 100%;
+  min-height: 100px;
+  max-height: 300px;
 }
 
 form input,
@@ -208,17 +250,14 @@ footer {
   }
 }
 @media (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
-  main {
-    width: 80%;
-    margin: 0 10%;
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
-  html {
-    font-size: 16px;
+  main {
+    width: 80%;
+    margin: 0 10%;
   }
 }
 @media (min-width: 1440px) {
