@@ -26,16 +26,24 @@
 
   <body>
     <header>
-      <h1>Erik Lidström</h1>
       <nav>
         <ul>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#hire-me">Hire Me</a></li>
         </ul>
       </nav>
     </header>
+    <section id="hero" class="hero">
+      <h1>I am Erik Lidström</h1>
+      <p>aspiring web developer</p>
+      <img
+        class="hero-image"
+        src="./assets/image.png"
+        alt="Image of Erik Lidström"
+      />
+    </section>
     <main>
       <section id="projects">
         <h2>Projects</h2>
@@ -79,36 +87,36 @@
         </div>
       </section>
       <section id="about">
-        <h2>About Me</h2>
-        <img
-          src="./assets/image.png"
-          alt="placeholder for image of erik lidstrom"
-          width="200"
-          height="200"
-        />
-        <p></p>
+        <h2>Erik Lidström</h2>
+
+        <p class="about-me-text">
+          I am a student studying to become a full stack javascript developer
+          and gymnasieingenjör.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: kirelidstrom@gmail.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p><a href=""></a></p>
+      </section>
+      <section id="hire-me">
+        <h2>Hire Me</h2>
+        <form id="hire-me-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
       </section>
     </main>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email:</p>
-      <p>Phone: 123-456-7890</p>
-    </section>
-    <section id="hire-me">
-      <h2>Hire Me</h2>
-      <form id="hire-me-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
     <footer>
       <p>&copy; 2025 Erik Lidström</p>
     </footer>
