@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My portfolio website showcasing my projects and skills."
+    />
+    <meta name="author" content="Erik Lidström" />
+    <meta property="og:title" content="Erik Lidström's Portfolio" />
+    <meta
+      property="og:description"
+      content="A showcase of my projects and skills."
+    />
+    <meta property="og:url" content="http://www.eriklidstrom.com" />
+    <meta
+      property="og:image"
+      content="http://www.eriklidstrom.com/portfolio-image.jpg"
+    />
+
+    <title>Erik`s portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Erik Lidström</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hire-me">Hire Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <img
+          src="./assets/image.png"
+          alt="placeholder for image of erik lidstrom"
+          width="200"
+          height="200"
+        />
+        <p></p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <h3>Project One</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, qui
+          natus cumque sapiente odio ipsum alias nisi cum laudantium rerum.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:</p>
+        <p>Phone: 123-456-7890</p>
+      </section>
+      <section id="hire me">
+        <form method="post">
+          <fieldset>
+            <legend>Project Details</legend>
+
+            <label for="work">type of work</label>
+
+            <select name="work" id="work" required>
+              <option value="" selected disabled>choose type of work</option>
+              <option value="web">Wedsite</option>
+              <option value="app">Web App</option>
+              <option value="bug">Bug Fix</option>
+              <option value="con">Consultation</option>
+            </select>
+
+            <label for="tech">Technologies involvd</label>
+
+            <input type="checkbox" id="tech1" name="tech1" value="HTML" />
+            <label for="tech1">HTML</label>
+            <input type="checkbox" id="tech2" name="tech2" value="css" />
+            <label for="tech2">CSS</label>
+            <input type="checkbox" id="tech3" name="tech3" value="JavaScript" />
+            <label for="tech3">JavaScript</label>
+            <input type="checkbox" id="tech4" name="tech4" value="Node.js" />
+            <label for="tech4">Node.js</label>
+
+            <label for="details">Project Details</label>
+
+            <textarea
+              id="details"
+              name="details"
+              rows="4"
+              cols="50"
+              placeholder="Provide a brief description of your project..."
+              required
+            >
+            </textarea>
+
+            <button type="submit">Submit</button>
+          </fieldset>
+          <fieldset>
+            <legend>Your Information</legend>
+            <label for="fullname"> Fulll Name</label>
+            <input type="text" id="fullname" placeholder="jon dow" required />
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jon@me.com" required />
+            <label for="CompanyOrOrganization">Company or Organization</label>
+            <input type="text" id="CompanyOrOrganization" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Erik Lidström</p>
+    </footer>
+  </body>
+</html>
