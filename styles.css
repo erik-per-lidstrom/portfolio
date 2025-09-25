@@ -3,6 +3,7 @@
   --bg-nav: #949494;
   --bg-nav-hover: #d0d0d0;
   --text-color: #000000;
+  --text-color2: rgb(128, 128, 128);
   --border-color: #000000;
   --bx1: #32325d40;
   --bx2: #0000004d;
@@ -169,6 +170,12 @@ main #about {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   background-color: var(--bg);
+}
+main #about ul {
+  text-align: center;
+  list-style-type: none;
+  color: var(--text-color2);
+  font-family: var(--font-family);
 }
 #contact {
   background-color: #828282;
